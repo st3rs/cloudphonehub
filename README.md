@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <img src="https://img.icons8.com/fluency/96/cloud-phone.png" alt="CloudPhoneHub Logo" width="80" />
+</p>
+
+<h1 align="center">CloudPhoneHub</h1>
+
+<p align="center">
+  <strong>Cloud-based phone management platform</strong>
+</p>
+
+<p align="center">
+  <a href="#features">Features</a> &bull;
+  <a href="#tech-stack">Tech Stack</a> &bull;
+  <a href="#getting-started">Getting Started</a> &bull;
+  <a href="#project-structure">Project Structure</a> &bull;
+  <a href="#deployment">Deployment</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-16-black?logo=next.js" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+</p>
+
+---
+
+## Features
+
+- Cloud phone device management
+- Modern, responsive UI with dark mode support
+- Built with the latest Next.js App Router
+- Type-safe development with TypeScript
+- Utility-first styling with Tailwind CSS v4
+
+## Tech Stack
+
+| Category      | Technology                  |
+| ------------- | --------------------------- |
+| Framework     | Next.js 16 (App Router)     |
+| UI Library    | React 19                    |
+| Language      | TypeScript 5                |
+| Styling       | Tailwind CSS 4 + PostCSS    |
+| Font          | Geist Sans & Geist Mono     |
+| Linting       | ESLint 9                    |
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- **Node.js** 18.18+
+- **npm**, **yarn**, **pnpm**, or **bun**
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/st3rs/cloudphonehub.git
+cd cloudphonehub
+
+# Install dependencies
+npm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+cloudphonehub/
+├── app/
+│   ├── layout.tsx        # Root layout with fonts & metadata
+│   ├── page.tsx          # Home page
+│   ├── globals.css       # Global styles & Tailwind
+│   └── favicon.ico       # App icon
+├── public/               # Static assets
+├── next.config.ts        # Next.js configuration
+├── tailwind.config.ts    # Tailwind configuration
+├── tsconfig.json         # TypeScript configuration
+└── package.json
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deploy instantly with [Vercel](https://vercel.com):
 
-## Deploy on Vercel
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fst3rs%2Fcloudphonehub)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Or build and serve manually:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+npm start
+```
+
+---
+
+<p align="center">
+  Made with &hearts; using Next.js
+</p>
